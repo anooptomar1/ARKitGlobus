@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARKitGlobus" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arscnView>
+                    <tabBarItem key="tabBarItem" title="Item" id="LLi-Xp-WkX"/>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.19999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Rkit Button View Controller-->
+        <scene sceneID="15G-1V-NWY">
+            <objects>
+                <viewController id="cLV-gL-OAo" customClass="ARkitButtonViewController" customModule="ARKitGlobus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iZJ-3U-OnX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMV-uy-Zpg">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPr-e5-IQH">
+                                        <rect key="frame" x="302" y="0.0" width="73" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="73" id="IaM-E0-0W6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AO-Pg-Jny">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="73" id="Iit-8A-h29"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YPr-e5-IQH" firstAttribute="top" secondItem="CMV-uy-Zpg" secondAttribute="top" id="6Vj-Fk-FqY"/>
+                                    <constraint firstAttribute="trailing" secondItem="YPr-e5-IQH" secondAttribute="trailing" id="GiN-CF-P8E"/>
+                                    <constraint firstItem="9AO-Pg-Jny" firstAttribute="leading" secondItem="CMV-uy-Zpg" secondAttribute="leading" id="ass-9C-MSf"/>
+                                    <constraint firstAttribute="bottom" secondItem="YPr-e5-IQH" secondAttribute="bottom" id="pKr-wu-mwP"/>
+                                    <constraint firstAttribute="bottom" secondItem="9AO-Pg-Jny" secondAttribute="bottom" id="sIz-gw-dRh"/>
+                                    <constraint firstItem="9AO-Pg-Jny" firstAttribute="top" secondItem="CMV-uy-Zpg" secondAttribute="top" id="yxc-lf-BHs"/>
+                                </constraints>
+                            </view>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dja-bd-pNY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CMV-uy-Zpg" firstAttribute="trailing" secondItem="emP-hq-Qjs" secondAttribute="trailing" id="8S6-ZH-0ct"/>
+                            <constraint firstItem="CMV-uy-Zpg" firstAttribute="top" secondItem="Dja-bd-pNY" secondAttribute="bottom" id="DvB-gU-Ogl"/>
+                            <constraint firstItem="CMV-uy-Zpg" firstAttribute="bottom" secondItem="emP-hq-Qjs" secondAttribute="bottom" id="GaD-Os-N1u"/>
+                            <constraint firstItem="Dja-bd-pNY" firstAttribute="leading" secondItem="emP-hq-Qjs" secondAttribute="leading" id="RK4-cP-NQ7"/>
+                            <constraint firstItem="Dja-bd-pNY" firstAttribute="top" secondItem="emP-hq-Qjs" secondAttribute="top" id="rFq-Xq-bdq"/>
+                            <constraint firstItem="CMV-uy-Zpg" firstAttribute="leading" secondItem="emP-hq-Qjs" secondAttribute="leading" id="ujt-F3-RKu"/>
+                            <constraint firstItem="emP-hq-Qjs" firstAttribute="trailing" secondItem="Dja-bd-pNY" secondAttribute="trailing" id="upx-P7-e0W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="emP-hq-Qjs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="vXo-UI-mpN"/>
+                    <connections>
+                        <outlet property="sceneView" destination="Dja-bd-pNY" id="Dza-uw-J5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJn-ol-bf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453.60000000000002" y="784.85757121439292"/>
+        </scene>
+    </scenes>
+</document>
