@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F39CF6F1F75533D00163D3C /* SpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39CF6E1F75533D00163D3C /* SpaceShip.swift */; };
+		7F39CF711F75535F00163D3C /* ShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39CF701F75535F00163D3C /* ShipViewController.swift */; };
 		7F529C9A1F73CD99007F4ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F529C991F73CD99007F4ED2 /* AppDelegate.swift */; };
 		7F529C9C1F73CD99007F4ED2 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F529C9B1F73CD99007F4ED2 /* art.scnassets */; };
 		7F529C9E1F73CD99007F4ED2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F529C9D1F73CD99007F4ED2 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F39CF6E1F75533D00163D3C /* SpaceShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShip.swift; sourceTree = "<group>"; };
+		7F39CF701F75535F00163D3C /* ShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipViewController.swift; sourceTree = "<group>"; };
 		7F529C961F73CD99007F4ED2 /* ARKitGlobus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitGlobus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F529C991F73CD99007F4ED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F529C9B1F73CD99007F4ED2 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F39CF721F7553F900163D3C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				7F39CF701F75535F00163D3C /* ShipViewController.swift */,
+				7F39CF6E1F75533D00163D3C /* SpaceShip.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		7F529C8D1F73CD99007F4ED2 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +76,7 @@
 				7F529C991F73CD99007F4ED2 /* AppDelegate.swift */,
 				7F529C9B1F73CD99007F4ED2 /* art.scnassets */,
 				7F529C9D1F73CD99007F4ED2 /* ViewController.swift */,
+				7F39CF721F7553F900163D3C /* New Group */,
 				7F529CAD1F740071007F4ED2 /* Planet.swift */,
 				7F529C9F1F73CD99007F4ED2 /* Main.storyboard */,
 				7F529CAF1F7443BA007F4ED2 /* ARkitButtonViewController.swift */,
@@ -146,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F39CF711F75535F00163D3C /* ShipViewController.swift in Sources */,
 				7F529CB01F7443BA007F4ED2 /* ARkitButtonViewController.swift in Sources */,
 				7F529CAE1F740071007F4ED2 /* Planet.swift in Sources */,
+				7F39CF6F1F75533D00163D3C /* SpaceShip.swift in Sources */,
 				7F529C9E1F73CD99007F4ED2 /* ViewController.swift in Sources */,
 				7F529C9A1F73CD99007F4ED2 /* AppDelegate.swift in Sources */,
 			);
